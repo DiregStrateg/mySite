@@ -1,10 +1,7 @@
-let money = 'Ваш бюджет?';
-let name = 'Название вашего магазина?';
-
-let shopGoods = {
-  budget: money,
-  shopName: name,
-  shopGoods: [],
-  employers: {},
-  open: false
+function parallax(event) {
+  this.querySelectorAll('.abc').forEach(layer => {
+    let speed = layer.getAttribute('data-speed');
+    layer.style.transform = `translateX(${event.clientX*speed/800}px`
+  });
 }
+document.addEventListener('mousemove', parallax);
