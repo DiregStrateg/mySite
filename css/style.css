@@ -1,5 +1,4 @@
 .view {
-  background: url('https://images.pexels.com/photos/1997484/pexels-photo-1997484.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
   background-repeat: no-repeat center center;
   background-size: cover;
 }
@@ -8,52 +7,71 @@ html,
 body,
 header,
 .view {
-  height: 100vh;
+  height: 100%;
 }
 .section {
-  background-color: #f2395a;
+  background-color: #000;
   color: #fff;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
+  perspective: 1000px;
 }
 .heading {
-  margin-left: 20%;
+  padding: 10px;
+  color: #fff;
+  z-index: 4;
 }
 .phone,
 .tablet,
 .desctop {
-  background-color: #fff;
-  position: absolute;
-  -webkit-transition: 1s;
-  transition: 1s;
-  transform: translateY(100%);
+  background-color: #f2395a;
+  box-shadow: 13px 13px 32px 0 rgba(31, 20, 22, 0.3);
+  position: absolute;  
+  height: 0;
 }
-.section:hover .phone {
-  transform: translateY(0) rotateY(-15%);
-}
-.phone {
-  width: 200px;
+.section:hover .phone { 
   height: 280px;
+  transform: translateY(10px) rotateY(10deg);
+}
+.section:hover .tablet { 
+  height: 380px;
+  transform: translateY(10px) rotateY(10deg);
+}
+.section:hover .desctop { 
+  height: 480px;
+  transform: translateY(10px) rotateY(10deg);
+}
+  
+.phone {
+  width: 130px;
+  
   left: 5%;
   bottom: 0;
-  background: #fff url('C:\Users\direg\3D Objects\mySite\img\phone.svg');
+  background: transparent url(../img/phone.svg);
+  background-repeat: no-repeat;  
+  -webkit-transition: .5s;
+  transition: .5s;
   z-index: 3;
 }
 .tablet {
-  width: 360px;
-  height: 380px;
-  background: #fff;
+  width: 180px;
+  
+  background: #f2395a;
   bottom: 0;
-  left: 10%;
+  left: 7%;
+  -webkit-transition: .7s;
+  transition: .7s;
   z-index: 1;
 }
 .desctop {
-  width: 680px;
-  height: 480px;
-  background: #fff url();
+  width: 180px;
+  
+  background: #f2395a;
   bottom: 0;
-  left: 15%;
+  left: 9%;
+  -webkit-transition: .9s;
+  transition: .9s;
 }

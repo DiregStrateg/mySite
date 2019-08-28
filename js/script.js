@@ -5,3 +5,12 @@ function parallax(event) {
   });
 }
 document.addEventListener('mousemove', parallax);
+let white = '#fff';
+let run = document.querySelector('.heading');
+  run.onclick = function () {
+      if (this.style.color) 
+        this.style.color = ''; 
+        else 
+          this.style.color = '#005560';
+               
+  }
