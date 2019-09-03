@@ -9,6 +9,22 @@ header,
 .view {
   height: 100%;
 }
+#block1,
+#block2,
+#block3 {
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 5%;
+  transition: .3s;
+}
+#block1:hover {
+  box-shadow: 5px 5px 5px 5px rgba(3, 169, 244, 0.7);
+}
+#block2:hover {
+  box-shadow: 5px 5px 5px 5px rgba(255, 152, 0, 0.7);
+}
+#block3:hover {
+  box-shadow: 5px 5px 5px 5px rgba(76, 175, 80, 0.7);
+}
 .section {
   background-color: #000;
   color: #fff;
@@ -28,7 +44,8 @@ header,
 .tablet,
 .desctop {
   background-color: #f2395a;
-  box-shadow: 13px 13px 32px 0 rgba(31, 20, 22, 0.3);
+  box-shadow: 10px 10px 32px 0 rgba(255, 255, 255, 0.3);
+  border-radius: 5%;
   position: absolute;  
   height: 0;
 }
@@ -37,11 +54,11 @@ header,
   transform: translateY(10px) rotateY(10deg);
 }
 .section:hover .tablet { 
-  height: 380px;
+  height: 180px;
   transform: translateY(10px) rotateY(10deg);
 }
 .section:hover .desctop { 
-  height: 480px;
+  height: 180px;
   transform: translateY(10px) rotateY(10deg);
 }
   
@@ -50,16 +67,16 @@ header,
   
   left: 5%;
   bottom: 0;
-  background: transparent url(../img/phone.svg);
+  background: rgba(0, 0, 0, 0.7)  url(../img/phone.svg);
   background-repeat: no-repeat;  
   -webkit-transition: .5s;
   transition: .5s;
   z-index: 3;
 }
 .tablet {
-  width: 180px;
+  width: 280px;
   
-  background: #f2395a;
+  background: rgba(0, 0, 0, 0.7) ;
   bottom: 0;
   left: 7%;
   -webkit-transition: .7s;
@@ -67,16 +84,18 @@ header,
   z-index: 1;
 }
 .desctop {
-  width: 180px;
+  width: 380px;
   
-  background: #f2395a;
+  background: rgba(0, 0, 0, 0.7) ;
   bottom: 0;
   left: 9%;
   -webkit-transition: .9s;
   transition: .9s;
 }
+
 @media (max-width: 768px) {
   .abc {
     display: none;
   }
+  
 }
