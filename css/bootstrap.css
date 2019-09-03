@@ -4323,6 +4323,7 @@ input[type="button"].btn-block {
   .navbar-expand-md .navbar-toggler {
     display: none;
   }
+  
 }
 
 @media (max-width: 991.98px) {

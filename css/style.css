@@ -75,3 +75,8 @@ header,
   -webkit-transition: .9s;
   transition: .9s;
 }
+@media (max-width: 768px) {
+  .abc {
+    display: none;
+  }
+}
